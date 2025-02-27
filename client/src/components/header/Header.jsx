@@ -58,7 +58,7 @@ const Header = () => {
                 Recipes
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
@@ -70,7 +70,7 @@ const Header = () => {
               >
                 Blogs
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 to="/contact"
@@ -95,7 +95,7 @@ const Header = () => {
                 Add Recipe
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/blog/add"
                 className={({ isActive }) =>
@@ -106,11 +106,11 @@ const Header = () => {
               >
                 Add Blog
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
-        {/* Sign in button */}
+        {/* Sign in button
         {user ? (
           <Avatar />
         ) : (
@@ -121,7 +121,7 @@ const Header = () => {
               icon={<FiLogIn />}
             />
           </Link>
-        )}
+        )} */}
 
         {/* Menu button */}
         <FiMenu

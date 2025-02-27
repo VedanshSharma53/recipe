@@ -50,7 +50,7 @@ const Menu = ({ isCollapsed, setIsCollapsed, user }) => {
                 Recipes
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to={"/blog"}
                 onClick={() => setIsCollapsed(!isCollapsed)}
@@ -58,7 +58,7 @@ const Menu = ({ isCollapsed, setIsCollapsed, user }) => {
               >
                 Blogs
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 to={"/contact"}
@@ -68,7 +68,22 @@ const Menu = ({ isCollapsed, setIsCollapsed, user }) => {
                 Contact
               </NavLink>
             </li>
-            {!user && (
+            <li>
+              <NavLink
+                to="/recipe/add"
+                className={({ isActive }) =>
+                  `relative block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-full 
+                              ${isActive
+                    ? "after:scale-x-100"
+                    : "after:scale-x-0"
+                  } 
+                              after:transition after:duration-300 after:origin-center font-semibold text-gray-600`
+                }
+              >
+                Add Recipe
+              </NavLink>
+            </li>
+            {/* {!user && (
               <li className="w-full">
                 <Link
                   to={"/auth/signin"}
@@ -81,7 +96,7 @@ const Menu = ({ isCollapsed, setIsCollapsed, user }) => {
                   />
                 </Link>
               </li>
-            )}
+            )} */}
           </ul>
         </motion.aside>
       )}

@@ -37,7 +37,7 @@ import RecipeGenerator from "./pages/recipe/RecipeGenerator";
 
 
 function App() {
-  useTitle("Recipen - Home");
+  useTitle("CookLab - Home");
 
   return (
     <Router>

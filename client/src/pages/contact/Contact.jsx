@@ -14,7 +14,7 @@ import useTitle from "../../hooks/useTitle";
 
 const Contact = () => {
   const user = useAuth();
-  useTitle("Recipen - Contact Us");
+  useTitle("CookLab - Contact Us");
 
   const [formDetails, setFormDetails] = useState({
     firstName: "",
@@ -47,10 +47,10 @@ const Contact = () => {
           <h4 className="font-bold">Chat with us</h4>
           <p>Our team is here to help</p>
           <a
-            href="mailto:recipen@abc.com"
+            href="mailto:CookLab@abc.com"
             className="font-semibold text-sm"
           >
-            recipen@abc.com
+            CookLab@abc.com
           </a>
         </div>
         <div className="mb-5 flex flex-col gap-1">

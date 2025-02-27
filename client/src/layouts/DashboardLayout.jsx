@@ -5,7 +5,7 @@ import useTitle from "../hooks/useTitle";
 
 const DashboardLayout = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
-  useTitle("Recipen - Dashboard");
+  useTitle("CookLab - Dashboard");
 
   return (
     <section className="flex">

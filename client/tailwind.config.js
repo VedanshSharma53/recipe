@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ffaa07",
-        primaryLight: "#ffb629",
-        light: "#fffefc",
+        primary: "#4CAF50",
+        primaryLight: "#ed98ea",
+        light: "#fffefc"
       },
       backgroundImage: {
         login:
@@ -17,3 +17,4 @@ export default {
   },
   plugins: [],
 };
+

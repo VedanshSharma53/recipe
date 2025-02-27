@@ -1,6 +1,6 @@
 // const allowedOrigins = [
-//   "https://recipen.vercel.app",
-//   "https://recipen-backend.onrender.com",
+//   "https://CookLab.vercel.app",
+//   "https://CookLab-backend.onrender.com",
 // ];
 
 const allowedOrigins = [

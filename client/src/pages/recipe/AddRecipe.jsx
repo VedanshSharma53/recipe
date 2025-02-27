@@ -9,7 +9,7 @@ import { useAddRecipeMutation } from "../../features/recipe/recipeApiSlice";
 import useTitle from "../../hooks/useTitle";
 
 const AddRecipe = () => {
-  useTitle("Recipen - Add Recipe");
+  useTitle("CookLab - Add Recipe");
 
   const [formDetails, setFormDetails] = useState({
     title: "",
