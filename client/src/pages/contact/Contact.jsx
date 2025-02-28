@@ -70,7 +70,7 @@ const Contact = () => {
               className="hover:text-gray-500"
               whileHover={{ y: -4 }}
             >
-              <a href="https://github.com/Avinash905">
+              <a href="https://github.com/cooklab">
                 <AiFillGithub />
               </a>
             </motion.li>
@@ -78,7 +78,7 @@ const Contact = () => {
               className="rounded-full hover:text-blue-400"
               whileHover={{ y: -4 }}
             >
-              <a href="https://twitter.com/avinashdunna">
+              <a href="https://twitter.com/cooklabdunna">
                 <AiFillTwitterCircle />
               </a>
             </motion.li>
@@ -86,7 +86,7 @@ const Contact = () => {
               className="rounded-full hover:text-blue-600"
               whileHover={{ y: -4 }}
             >
-              <a href="https://www.linkedin.com/in/dunna-avinash">
+              <a href="https://www.linkedin.com/in/dunna-cooklab">
                 <AiFillLinkedin />
               </a>
             </motion.li>
