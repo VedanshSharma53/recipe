@@ -40,30 +40,30 @@ const Contact = () => {
           <h4 className="font-bold">Visit us</h4>
           <p>Come say hello to our office</p>
           <p className="font-semibold text-sm">
-            Friends Colony, Mumbai, Maharashtra 400070
+            MLR Institute of Technology, Hyderabad
           </p>
         </div>
         <div className="mb-5 flex flex-col gap-1">
           <h4 className="font-bold">Chat with us</h4>
           <p>Our team is here to help</p>
           <a
-            href="mailto:CookLab@abc.com"
+            href="mailto:CookLabMLR@gmail.com"
             className="font-semibold text-sm"
           >
-            CookLab@abc.com
+            CookLabMLR@gmail.com
           </a>
         </div>
         <div className="mb-5 flex flex-col gap-1">
           <h4 className="font-bold">Call us</h4>
           <p>Mon-Fri from 9am to 6pm</p>
           <a
-            href="tel:+919876543210"
+            href="tel:+919290091588"
             className="font-semibold text-sm"
           >
-            +91 9876543210
+            +91 9290091588
           </a>
         </div>
-        <div className="mb-5 flex flex-col gap-3">
+        {/* <div className="mb-5 flex flex-col gap-3">
           <h4 className="font-bold">Social media</h4>
           <ul className="flex justify-center md:justify-start gap-4 text-xl">
             <motion.li
@@ -91,7 +91,7 @@ const Contact = () => {
               </a>
             </motion.li>
           </ul>
-        </div>
+        </div> */}
       </div>
       {/* Contact form container */}
       <div className="basis-1/2 lg:basis-1/4 m-auto flex flex-col">
@@ -105,9 +105,7 @@ const Contact = () => {
         {/* Contact form */}
         <form
           className="flex flex-col gap-4"
-          action={`https://formspree.io/f/${
-            import.meta.env.VITE_FORMIK_SECRET
-          }`}
+          action={`https://formspree.io/f/xanqrqwj`}
           method="POST"
         >
           <div className="flex gap-4 flex-col sm:flex-row md:flex-col lg:flex-row">

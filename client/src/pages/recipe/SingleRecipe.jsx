@@ -183,7 +183,7 @@ const SingleRecipe = () => {
                 <h2 className="font-bold text-xl md:text-3xl">{data?.title}</h2>
                 {data?.author?._id === user?.userId && (
                   <>
-                    <IconButton
+                    {/* <IconButton
                       aria-label="more"
                       id="long-button"
                       aria-controls={open ? "long-menu" : undefined}
@@ -193,8 +193,8 @@ const SingleRecipe = () => {
                       onClick={handleMenu}
                     >
                       <MoreVert />
-                    </IconButton>
-                    <Menu
+                    </IconButton> */}
+                    {/* <Menu
                       id="long-menu"
                       MenuListProps={{
                         "aria-labelledby": "long-button",
@@ -207,38 +207,38 @@ const SingleRecipe = () => {
                         <Link to={`/recipe/edit/${id}`}>Edit</Link>
                       </MenuItem>
                       <MenuItem onClick={handleMenuDelete}>Delete</MenuItem>
-                    </Menu>
+                    </Menu> */}
                   </>
                 )}
               </div>
               <div className="flex justify-between items-center">
-                <p className="flex gap-2 items-center font-semibold">
+                {/* <p className="flex gap-2 items-center font-semibold">
                   <LuChefHat className="text-primary" />
                   {data?.author?.name}
-                </p>
+                </p> */}
                 <div className="flex gap-2 p-2 bg-light rounded-l-lg">
-                  {user?.favorites?.some((ele) => ele === id) ? (
+                  {/* {user?.favorites?.some((ele) => ele === id) ? (
                     <AiFillHeart
                       className="text-2xl text-red-500 cursor-pointer"
                       onClick={handleToggleFavorite}
                     />
                   ) : (
-                    <AiOutlineHeart
-                      className="text-2xl text-red-500 cursor-pointer"
-                      onClick={handleToggleFavorite}
-                    />
-                  )}
+                    // <AiOutlineHeart
+                    //   className="text-2xl text-red-500 cursor-pointer"
+                    //   onClick={handleToggleFavorite}
+                    // />
+                  )} */}
                   <ShareButton
                     url={`${import.meta.env.VITE_BASE_URL}/recipe/${data?._id}`}
                   />
                 </div>
               </div>
-              {/* Recipe rating */}
+              {/* Recipe rating
               <Rating
                 value={averageRating}
                 size={"medium"}
                 readOnly
-              />
+              /> */}
               <p className="my-4">{data?.description}</p>
               {/* Recipe time & cals */}
               <div className="flex flex-col sm:flex-row gap-4 justify-between w-2/3 mx-auto">
@@ -283,7 +283,7 @@ const SingleRecipe = () => {
           </div>
           <hr />
           {/* Rate recipe */}
-          {!data?.ratings?.some((obj) => obj.user === user?.userId) && (
+          {/* {!data?.ratings?.some((obj) => obj.user === user?.userId) && (
             <>
               <div className="my-6 w-full sm:w-2/3 md:w-1/2 mx-auto flex justify-between gap-6">
                 <h3 className="font-bold text-2xl">Rate the recipe</h3>
@@ -296,9 +296,9 @@ const SingleRecipe = () => {
               </div>
               <hr />
             </>
-          )}
+          )} */}
           {/* Recipe comment form */}
-          <div className="my-10 w-full sm:w-2/3 md:w-1/2 mx-auto flex flex-col gap-6">
+          {/* <div className="my-10 w-full sm:w-2/3 md:w-1/2 mx-auto flex flex-col gap-6">
             <h3 className="font-bold text-2xl">Leave a Reply</h3>
             <form
               className="flex flex-col gap-4"
@@ -349,9 +349,9 @@ const SingleRecipe = () => {
               />
             </form>
           </div>
-          <hr />
+          <hr /> */}
           {/* Recipe comments */}
-          <div className="w-full sm:w-4/5 mx-auto flex flex-col gap-6">
+          {/* <div className="w-full sm:w-4/5 mx-auto flex flex-col gap-6">
             <h3 className="font-bold text-2xl">Comments</h3>
             {data?.comments?.length ? (
               <div className="flex flex-col gap-6">
@@ -367,7 +367,7 @@ const SingleRecipe = () => {
             ) : (
               <NoData text={"Comments"} />
             )}
-          </div>
+          </div> */}
         </section>
       )}
     </>

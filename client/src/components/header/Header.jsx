@@ -95,6 +95,18 @@ const Header = () => {
                 Add Recipe
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/recipe/generate"
+                className={({ isActive }) =>
+                  `relative block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-full 
+                  ${isActive ? "after:scale-x-100" : "after:scale-x-0"} 
+                  after:transition after:duration-300 after:origin-center font-semibold text-gray-600`
+                }
+              >
+                Cook Here
+              </NavLink>
+            </li>
             {/* <li>
               <NavLink
                 to="/blog/add"

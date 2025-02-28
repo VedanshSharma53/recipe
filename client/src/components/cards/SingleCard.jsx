@@ -57,7 +57,7 @@ const SingleCard = ({ singleData, type }) => {
           {/* Favorite & share button */}
           {type === "recipe" && (
             <div className="absolute top-2 right-0 flex flex-col gap-2 p-2 bg-light rounded-l-lg z-10">
-              {user?.favorites?.some((ele) => ele === singleData._id) ? (
+              {/* {user?.favorites?.some((ele) => ele === singleData._id) ? (
                 <AiFillHeart
                   className="text-2xl text-red-500 cursor-pointer"
                   onClick={handleToggleFavorite}
@@ -67,7 +67,7 @@ const SingleCard = ({ singleData, type }) => {
                   className="text-2xl text-red-500 cursor-pointer"
                   onClick={handleToggleFavorite}
                 />
-              )}
+              )} */}
               <ShareButton
                 url={`${import.meta.env.VITE_BASE_URL}/recipe/${
                   singleData?._id
@@ -96,13 +96,13 @@ const SingleCard = ({ singleData, type }) => {
             {singleData?.description.substring(0, 100)}...
           </p>
           {/* Card rating */}
-          {type === "recipe" && (
+          {/* {type === "recipe" && (
             <Rating
               value={averageRating}
               readOnly
               size={"medium"}
             />
-          )}
+          )} */}
         </div>
       </div>
       {/* Read more link */}

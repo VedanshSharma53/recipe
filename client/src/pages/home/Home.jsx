@@ -22,14 +22,6 @@ const Home = () => {
         data={recipes?.data}
         isLoading={recipes?.isLoading}
       />
-      {!user?.roles?.some((role) => role === "ProUser" || role === "Admin") && (
-        <Subscribe />
-      )}
-      <HomeCategories
-        title={"blog"}
-        data={blogs?.data}
-        isLoading={blogs?.isLoading}
-      />
     </>
   );
 };

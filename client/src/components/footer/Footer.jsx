@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Logo } from "..";
 import { Link } from "react-router-dom";
 
+
 const Footer = () => {
   return (
     <footer className="border-b-4 border-primary bg-yellow-50 pt-12 mt-24">
@@ -28,28 +29,31 @@ const Footer = () => {
           <ul className="flex flex-col gap-2 font-semibold mx-8 items-center md:items-start">
             <li className="text-gray-700 text-sm text-bold mb-2">Product</li>
             <motion.li whileHover={{ x: 5 }}>
-              <Link>Home</Link>
+              <Link to="/">Home</Link>
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              <Link>Blog</Link>
+              <Link to="/recipe">Recipes</Link>
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              <Link>Recipes</Link>
+              <Link to="/contact">Contact</Link>
+            </motion.li>
+            <motion.li whileHover={{ x: 4 }}>
+              <Link to="/recipe/add">Add Recipe</Link>
             </motion.li>
             <motion.li whileHover={{ x: 5 }}>
-              <Link>Contact</Link>
+              <Link to="/recipe/generate">Cook Here</Link>
             </motion.li>
           </ul>
         
         </div>
       </div>
       {/* Footer bottom */}
-      <div className="box flex justify-center sm:justify-between flex-col sm:flex-row w-full gap-4">
+      {/* <div className="box flex justify-center sm:justify-between flex-col sm:flex-row w-full gap-4">
         <p className="text-sm text-center">
           &copy; {new Date().getFullYear()} CookLab. All rights reserved
-        </p>
+        </p> */}
         {/* Footer social links */}
-        <ul className="flex justify-center gap-6 text-xl">
+        {/* <ul className="flex justify-center gap-6 text-xl">
           <motion.li
             className="border border-primary p-1 rounded-full hover:text-gray-500"
             whileHover={{ y: -4 }}
@@ -83,8 +87,8 @@ const Footer = () => {
               <AiFillLinkedin />
             </a>
           </motion.li>
-        </ul>
-      </div>
+        </ul> */}
+      {/* </div> */}
     </footer>
   );
 };
