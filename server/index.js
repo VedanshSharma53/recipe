@@ -28,7 +28,12 @@ app.use("/api/recipe", require("./routes/recipeRoutes"));
 app.use("/api/blog", require("./routes/blogRoutes"));
 app.use("/api/stripe", require("./routes/subscriptionRoutes"));
 
-
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*"); // Allow all origins
+//   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH");
+//   res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+//   next();
+// });
 
 app.use(errorHandler);
 
