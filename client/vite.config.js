@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react({
     // Add this line
+    proxy: {
+      "/api": "https://recipe-backend-two.vercel.app"  // Adjust this based on your backend
+    },
     include: "**/*.jsx",
   })]
 })
